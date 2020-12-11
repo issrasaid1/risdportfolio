@@ -1,0 +1,153 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Iterative Design</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <style>
+    /*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');*/
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    h3 {
+      text-align: center;
+      color: #e75480;
+      font-family: 'Open Sans', sans-serif;
+    }
+    h1 {
+        font-size: 45px;
+          color: #e75480;
+    }
+
+    h2 {
+      font-size: 25px;
+      color: #e75480;
+    }
+    a{
+      font-size: 20px;
+      color: #696969;
+    }
+    p {
+    font-size: 20px;
+    color: #696969;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+    h5{
+      font-size: 15px;
+      color: #484848;
+    }
+
+        body {
+             font-family: 'Open Sans', sans-serif;
+               text-align: center;
+               padding-left: 5%;
+               padding-right: 5%;
+               padding-bottom: 5%;
+
+               background-color:#F8F8F8;
+          }
+    ul, ol {
+    text-align: center;
+    list-style-position: inside;
+      color: #696969;
+      font-size: 20px;
+}
+    </style>
+  </head>
+
+  <body>
+    <!-- TODO: put your HTML code here! -->
+
+      <div class="topnav" id="myTopnav">
+        <a href="about.html">about</a>
+        <a href="home.html">home</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+    <h1>Iterative Design</h1>
+      <h3> CSCI 1300: User Interfaces & User Experiences 2020 <h3>
+
+  <h5 style=" font-style: italic">  For this group project, we were assigned to pick a startup and iteratively design an interface, from scratch, using only the concept of the startup.
+    We created an interface based on Nototo&#8217;s idea of allowing users to take advantage of their visual-spatial memory. We used the theme of space to organize the note-taking application. Throughout the process, we created sketches, lo-fi, and hi-fi prototypes, received feedback from an industry professional, and uploaded our prototype to usertesting.com to get real user input.</h5>
+
+
+  <h2 > Startup info </h2>
+
+  <p style="text-align:center"> Nototo is a note-taking software that allows users to take advantage of their visual-spatial memory. The intention behind the workspace is to store any volume of information in however layout a user decides. The result is an infinite 'map' that the user(s) continuously builds upon. A key feature is the zooming aspect of the workspace, whereby all the notes are visible when a user zooms out and as the user zooms in, more specific categories, media and notes become visible.
+    </p>
+
+            <h2 > Wireframes </h2>
+            <p style="text-align:center"> After some initial sketching, we created a lo-fi prototype for our interface to demonstrate the potential layout and functionalities.
+              </p>
+
+              <img src= "nototoo.png" class="center" style="width:50%">
+              <br>
+              <img src= "nototo2.png" class="center" style="width:50%">
+              <br>
+              <img src= "nototo3.png" class="center" style="width:50%">
+              <h2 style="text-align:center">Mockup</h2>
+              <p style="text-align:center"> After creating a lo-fi prototype for Nototo, we made our hi-fi prototype in Figma to implement our ideas. <br>Here is the link to our <a href="https://www.figma.com/proto/8RuGP3yaYpJwQRtxuiPUxL/Nototo-Hi-Fi-Prototype?node-id=6%3A6&scaling=min-zoom"><u>prototype</u>.</a>
+                </p>
+
+                <h2 style="text-align:center">Critique feedback</h2>
+                <p style=" font-style: italic"> The following is the feedback that we recieved during a critique of our initial prototype:</p>
+            <ul>
+              <li> Upper left corner is the most important call to action </li>
+<li> Maybe move 'back to home' and 'create element' buttons to top of screen (core navigation) </li>
+<li>Zoom in and zoom out button is good for ppl who use screen reader (affordances) </li>
+<li> Breadcrumb system so you do not get lost (maybe a path)</li>
+<li>Mini-Map in corner to show where you are in screen</li>
+<li>Click outside of bubble or sheet to zoom out </li>
+<li>Create a visual hierarchy </li>
+<li> Reduce number of type faces on home screen to 1-2 </li>
+<li>Back to home button on the biology screen is not linked </li>
+<li> Clicking 'sign up' also takes me to the login screen, consider adjusting the hot spot</li>
+</ul>
+
+                    <h2 >User testing</h2>
+                    <p style="text-align:center"> To test our designs, we uploaded our prototype to Usertesting.com to recieve feedback that we could use to improve future iterations.
+                      </p>
+                      <h2 >Testing instructions</h2>
+                      <p style="text-align:center"> The following is the instructions we gave to the users on Usertesting.com: <br> Sign into Nototo, add an image to the blank document in the biology lab bubble, then, log out.
+                        </p>
+                          <h2>Post-test questions</h2>
+                          <p style="text-align:center;font-style: italic"> After the users tested the design, we asked them the following questions: </p>
+                          <ul>
+                            <li>  Did you feel that the website gave you enough information and cues to feel comfortable using the interface and navigating to the correct topic? Explain your answer. </li>
+<li>What, if anything, is missing on this page? </li>
+<li>What 3 words would you use to describe this interface? Would you feel comfortable using Nototo for your note-taking? Explain your answer.</li>
+
+
+                                  <h2>Summary of test results</h2>
+                                  <p style="text-align:center">  Overall, though the interface seemed intuitive to most of the users,
+                                    there was confusion across the board for how to properly insert an image to a document or element in one of the bubbles.
+                                    The users had to experiment clicking on various other elements first before realizing what they had to do. As a result, they would kind of backtrack to where their initial startpoint was and after exploring the other elements, move from that initial startpoint.
+                                    </p>
+
+
+                                          <h2>Potential changes</h2>
+                                          <p style="text-align:center"> After taking feedback from the critique and user testing, we mapped out some potential changes to the prototype for future iterations. For one, we could clarify in the user testing instructions that the user should be adding a document to the lab section as they go through the test, or
+                                            have the testng instructions guide the user rather than just give them a task and a question at the beginning.
+In terms of layout, perhaps making the add element button more of a fan with multiple functionalities (add image, text, etc.) that pops up when the user hovers over the button would improve the user experience.
+We could also simplify the navigation bar at the top of the document to make it clear to the user that to insert elements they should use the add element button.
+
+                                            </p>
+
+
+    <h2 > Conclusion </h2>
+
+  <p style="text-align:center">  This project allowed me to go through the iterative design process and understand the importance of user testing.
+    I have also learned the importance of clear instruction when conducting user testing in order to produce good data. </p>
+
+
+  </body>
+</html>

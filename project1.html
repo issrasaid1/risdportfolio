@@ -1,0 +1,124 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title style="font-family:'Open sans'">Responsive Redesign</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <style>
+  /*  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');*/
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+     h3 {
+      text-align: center;
+      color: #e75480;
+    }
+    h2 {
+      font-size: 25px;
+      color: #e75480;
+    }
+    h1 {
+      text-align: center;
+      color: #e75480;
+      padding-top; 20%;
+      font-size: 45px;
+    }
+
+
+    p {
+    font-size: 20px;
+    color: #696969;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+    h5, a{
+      font-size: 15px;
+      color: #484848;
+    }
+    body {
+       font-family: 'Open Sans', sans-serif;
+         text-align: center;
+       padding-left: 5%;
+       padding-right: 5%;
+       padding-bottom: 5%;
+       background-color:#F8F8F8;
+    }
+    .img {
+    display: block;
+    border: 0;
+}
+    </style>
+  </head>
+
+  <body>
+
+    <div class="topnav" id="myTopnav" >
+      <a href="about.html">about</a>
+      <a href="home.html">home</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+
+    <h1>Responsive Redesign</h1>
+      <h3 style=" text-align:center"> RISD Digital Tools for Artists 2020 <h3>
+
+  <h5 style=" font-style: italic; text-align:center">   For this project, I redesigned the homepage of a local restaurant's website, Brickway on Wickenden, to improve their usability, visual design, and responsiveness. <br>This is the link to the website: <a href="url"><u>http://www.brickwayonwickenden.com</u></a> <br> Here is a link to the <a href="https://frozen-peak-98933.herokuapp.com"><u>redesign.</u></a><h6>
+
+    <img src="original brickway.jpg.png"  class="center" style="width:50%">
+
+<h2 style="text-align:center"> Usability problems </h2>
+<p style="text-align:center;font-style: italic;"> I analyzed the current design of the homepage by looking at three key factors: the usability, learnability, and memorability of the design. </p>
+<p style="text-align:center"> I first looked at the usability of the design. For one, the  pause and play buttons do not change on hover or on click. Therefore, it is difficult for the user to immediately see that their action with the button has worked. There is also no indication of the active page.  In addition, there is two menu tabs, (one for lunch and one for breakfast), it would be simpler for the customer to use if there was one tab with both menus included. Lastly, sometimes the gallery image doesn't load so all the user sees is a white box underneath the <q>Gallery</q> heading.<p>
+<br><p style="text-align:center"> I next explored learnability. First, the content included in the lines of text on the left side of the page are unorganized. For one, there is no heading to this section to indicate to the user its purpose. In addition, some of the content is unrelated to one another and does not make sense given the order e.g.  <q>Call for details</q> is written before <q>Only the freshest ingredients.</q> There is also little to no text hierarchy, so therefore it is difficult for the user to learn what the most important information on the page is.</p> <br>
+<p style="text-align:center"> I finally examined the memorability of the page. The homepage of the website is very busy and it requires users to pay close attention to the text in order to remember what information is placed where. In the same way, there are too many images on the home page (in an unorganized fashion) for the user to focus on.  </p>
+
+<h2 style="text-align:center"> Accessibility tests and findings </h2>
+<p style="text-align:center; font-style: italic;"> I next used different tools to measure the accessibility of the homepage design. </p>
+
+<p style="text-align:center"> I used the screen reader VoiceOver for Mac OS. Overall, it was able to read the text and images on the  website effectively with no issues.  In order to measure accessibility of the website I used the screen reader Wave Web Accessibility Evaluation Tool. The main error was that there is very low contrast between text and background colors on the website. Contrast between text and background colors is necessary for all users, especially users with low vision.  There is particularly little color contrast between the orange background and yellow text whenever the restaurant name is mentioned. Orange against yellow does not provide enough contrast. The screen reader also found that there was no heading structure nor page regions for the site. Lastly, there was one <q>linked image missing alternative text</q> and one <q>language missing or invalid</q> error since the gallery images were not showing up. </p>
+
+<h2 style="text-align:center"> Wireframe </h2>
+<p style="text-align:center"> Informed by my analysis of the usability issues of this design, I mocked up wireframes using Balsamiq for three different screens: desktop, tablet, and mobile.
+The desktop wireframe is labeled and annotated to show the different elements of the redesign and also explain the reasoning behind these changes. </p>
+<img src="wireframe desktop copy.png" class="center">
+<p style="text-align:center"><b>Navigation bar:</b> I simplified the menu bar to just include one menu icon.
+  <br><b>Headline:</b> I simplified the page to only mention the restaurant name once and have it as the main headline in the center of the page. I made this the largest text size in order to reinforce text hierarchy principles and increase memorability of the page for the customer.
+<br><b>Background:</b> I chose one image to be the background, reducing the amount of images on the page, since it was too busy before.
+   <br><b>Text:</b> I made the main text bigger to increase readibility. <br> <b>Button:</b> I added a button in the middle to make the navigation of the website easier. The purpose of the homepage is to get people to order from Brickway, so it is important to have an easy tool (like a button) to do so. </p>
+<img src="wireframe tablet copy.png" class="center" style="width:30%; padding-bottom: 50px; padding-top:30px">
+<img src="wireframe mobile copy.png" class="center" style="width:30%;padding-bottom: 30px">
+
+<h2 style="text-align:center"> High-fidelity prototype </h2>
+<p style="text-align:center"> I created prototypes using Figma for three screens: desktop, tablet, and mobile. These prototypes are based on the wireframes I made. The first wireframe is annotated to provide more context as to how the webpage could be built.  </p>
+
+<img src="figma desktop.jpeg" class="center" style = "padding-bottom: 30px; padding-top: 30px">
+
+<p style="text-align:center"> To make this page responsive, I used responsive web design viewport. I also used a flexbox to hold the container for the main text on the page in order for the page to be responsive and also have all the text aligned to the middle on all screens. <p>
+  <p> Here is the link to all of the prototypes for each of the three screens on <a href="https://www.figma.com/file/cW4LvfDwzVh7gXvpbbY1oh/Untitled?node-id=0%3A1"><u> Figma.</u></a> </p>
+
+<h2 style="text-align:center"> Style guide </h2>
+
+<p style="text-align:center"> I created a visual design style guide that displays the main colors, typography, and the different states of reusable components of the redesigned page (buttons on hover, click, etc.).  </p>
+<img src="style guide updated.png" class="center">
+
+<h2 style="text-align:center"> Redesigned homepage </h2>
+<p style="text-align:center"> Below is a screenshot of the resdesigned homepage coded using HTML/CSS.</p>
+<img src="brickway desktop.jpg.png" class="center">
+
+
+
+
+<h2 style="text-align:center"> Conclusion </h2>
+<p style="text-align:center"> This project allowed me to critique a website and apply those observations in redesigning it. From this process, I have learned how important certain UI principles are in regards to visual appeals and the functionality of a website. </p>
+
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Share Heartbeat</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <style>
+  /*  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');*/
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    h3 {
+      text-align: center;
+      color: #e75480;
+    }
+
+    h1 {
+        font-size: 45px;
+          color: #e75480;
+    }
+    h2 {
+      font-size: 25px;
+      color: #e75480;
+    }
+    p {
+    font-size: 20px;
+    color: #696969;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+    h5{
+      font-size: 15px;
+      color: #484848;
+    }
+
+    body {
+       font-family: 'Open Sans', sans-serif;
+       text-align: center;
+     padding-left: 5%;
+     padding-right: 5%;
+     padding-bottom: 5%;
+    }
+    </style>
+  </head>
+
+  <body>
+    <!-- TODO: put your HTML code here! -->
+    <body>
+      <body style="background-color:#F8F8F8;">
+        <div class="topnav" id="myTopnav">
+          <a href="about.html">about</a>
+          <a href="home.html">home</a>
+
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+            <h1>Share Heartbeat</h1>
+                <h3> CSCI1951C: Designing Humanity Centered Robots 2019</h3>
+
+        <h5 style=" font-style: italic; text-align:center">  Share Heartbeat is a final group project for CSCI1951C.
+          This project is a culmination of a semester's work of experimenting with arduinos and the design process. <br>The Share Heartbeat pillow is intended for long-distance couples to send and receive each other's heartbeats.
+            Couples can connect with one another by cuddling with a pillow that plays their partner's heartbeat.</h5>
+
+            <img src="heart3.png" style="width:60%"  class="center">
+
+
+              <h2 style="text-align:center"> Designing the heartbeat to feel real </h2>
+              <p style="text-align:center">In our first iterations, we struggled to get the heartbeat to feel real. If anything, our vibrations felt like receiving text messages.
+We decided to purchase a haptic motor controller (Adafruit DRV 2605L) that already has built-in vibration patterns.
+We found that using a combination of two different vibrations in succession (strong beat followed by a short beat) made the vibrations truly feel like a heartbeat.
+</p>
+    <h2 style="text-align:center"> Connecting the heartrate sensor </h2>
+    <p style="text-align:center">The next big challenge was figuring out how to get the two Pis to communicate. Each Pi had to send a heartbeat and receive a heartbeat in realtime.
+We used sockets to get the Pis to communicate over wifi. One Pi was the server, and the other was the client.
+</p>
+
+<h2 style="text-align:center"> Design choices </h2>
+<p style="text-align:center">We chose large plush hearts that could be hugged fully. Next, we brainstormed where to place the pulse sensor.
+  In order to test the best location, we asked several people to hug the heart plushie and realized that a lot of hands were on either end of the heart.
+  So we decided to place the pulse sensor on the side of the heart, where the right index finger would touch when the heart is hugged.
+  <br>
+  <br>
+
+      <img src="sketch1.png" style="width:60%"  class="center">
+      <br>
+      <img src="sketch2.png" style="width:60%"  class="center">
+      <br>
+      <img src="heart2.png" style="width:60%"  class="center">
+      <br>
+<p> By using a powerbank as our power source, we were able to go wireless and place all the parts inside the plush heart. Also, it was important to protect our wires, so we created a simple shield made of cardboard.</p>
+<br>
+  <img src="box.png" style="width:60%"  class="center">
+  <br>
+<h2 style="text-align:center"> Final working product </h2>
+<br>
+  <img src="finalproduct.png" style="width:60%"  class="center">
+  <h2 style="text-align:center"> Conclusion </h2>
+  <p style="text-align:center">  Through this project, I was able to practice human-centered design to create a solution to a fun, yet serious problem space.
+    In addition, I was able to learn more about systems design with this project as it required communication of a server and client over wifi. </p>
+</p>
+
+  </body>
+</html>
